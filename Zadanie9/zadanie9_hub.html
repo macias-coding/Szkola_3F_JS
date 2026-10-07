@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+ <head>
+   <meta charset="utf-8">
+   <title>Maciej Huba klasa 3F - zadanie 9 (Prompt Box)</title>
+   <script type="text/javascript">
+    function show_prompt()
+      {
+        var name=prompt("Napisz imię","Imię Nazwisko");
+           if (name!=null && name!="")
+              {
+                 document.write("Witaj " + name + "! jak się masz?");
+              }
+       }
+
+    function okno_zamknij_huba()
+      {
+        window.close()
+      }
+   </script>
+ </head>
+<body>
+  <h2>Zadanie 9 - Prompt Box</h2>
+  <b>Zastosowanie:</b><br>
+  Jest używany, kiedy użytkownik ma wpisać coś, np. zanim wejdzie w dany moduł strony, np. hasło.
+  Użytkownik po wpisaniu wartości może nacisnąć „OK" albo „Cancel". Jeżeli użytkownik kliknie „OK",
+  metoda zwraca wpisaną wartość, a w przeciwnym wypadku zwraca null.<br><br>
+
+  <input type="button" onclick="show_prompt()" value="Pokaż prompt box" />
+  <input type="button" value="zamknij okno" onclick="okno_zamknij_huba()"/>
+  <br><br>
+
+  <b>Operatory w JavaScript</b>
+  <table border="1" cellpadding="3">
+    <tr><th>Operator</th><th>Działanie operatora</th></tr>
+    <tr><td>+</td><td>dodawanie liczb oraz klejenie łańcuchów (konkatenacja)</td></tr>
+    <tr><td>-</td><td>odejmowanie liczb</td></tr>
+    <tr><td>*</td><td>mnożenie liczb</td></tr>
+    <tr><td>/</td><td>dzielenie liczb</td></tr>
+    <tr><td>++</td><td>inkrementacja (zwiększenie liczby o dokładnie 1)</td></tr>
+    <tr><td>--</td><td>dekrementacja (zmniejszenie liczby o dokładnie 1)</td></tr>
+    <tr><td>%</td><td>reszta z dzielenia (modulo), np. 27 % 6 jest równe 3, bo cztery szóstki mieszczą się w 27 (co daje 24) i reszty zostaje 3</td></tr>
+    <tr><td>=</td><td>przypisanie wartości do zmiennej</td></tr>
+    <tr><td>==</td><td>porównanie wartości</td></tr>
+    <tr><td>&lt;</td><td>mniejsze od</td></tr>
+    <tr><td>&lt;=</td><td>mniejsze lub równe od</td></tr>
+    <tr><td>&gt;</td><td>większe od</td></tr>
+    <tr><td>&gt;=</td><td>większe lub równe od</td></tr>
+    <tr><td>!</td><td>zaprzeczenie (negacja)</td></tr>
+    <tr><td>&amp;&amp;</td><td>logiczne "i" (and)</td></tr>
+    <tr><td>||</td><td>logiczne "lub" (or)</td></tr>
+    <tr><td>+=</td><td>skrócony zapis, np. a += b odpowiada: a = a + b</td></tr>
+    <tr><td>-=</td><td>skrócony zapis, np. a -= b odpowiada: a = a - b</td></tr>
+    <tr><td>*=</td><td>skrócony zapis, np. a *= b odpowiada: a = a * b</td></tr>
+    <tr><td>/=</td><td>skrócony zapis, np. a /= b odpowiada: a = a / b</td></tr>
+    <tr><td>%=</td><td>skrócony zapis, np. a %= b odpowiada: a = a % b</td></tr>
+  </table>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+  <head>
+    <meta charset="utf-8">
+    <title>Maciej Huba klasa 3F - zadanie 6 (teoria)</title>
+    <script type="text/javascript">
+      function okno_zamknij_huba()
+        {
+          window.close()
+        }
+    </script>
+  </head>
+<body>
+  <h2>Zadanie 6 - zadanie teoretyczne (Maciej Huba, klasa 3F)</h2>
+
+  <b>1) Rodzaje okienek</b><br>
+  <ul>
+    <li><b><u>Okienko alert</u></b> - wyświetla okienko dialogowe z <u>informacją</u> i przyciskiem <b>OK</b>.</li>
+    <li><b><u>Okienko prompt</u></b> - generuje okno, w którym użytkownik może <u>wpisać wartość</u>, zwracaną następnie do programu.</li>
+    <li><b><u>Okienko confirm</u></b> - służy do tego, aby użytkownik coś <u>potwierdził</u> (stąd nazwa confirm).</li>
+  </ul>
+
+  <b>2) Konwersja liczb</b><br>
+  Wczytanie zmiennej z użyciem <b>prompt</b> wykonywane jest jako <u>ciąg znaków</u>, dlatego konieczna jest konwersja z ciągu znaków na wartości liczbowe, aby wykonywać obliczenia.
+  <ul>
+    <li><b>parseFloat(zmienna)</b> - konwersja zmiennej do typu <u>float</u> (zmiennoprzecinkowego),</li>
+    <li><b>parseInt(zmienna)</b> - konwersja zmiennej do typu <u>int</u> (liczbowego całkowitego),</li>
+    <li><b>toString(zmienna)</b> - konwersja zmiennej do typu <u>łańcuchowego</u>.</li>
+  </ul>
+
+  <b>3) Przy nadawaniu nazw zmiennym należy przestrzegać pewnych zasad (trzy zasady):</b>
+  <ol>
+    <li>Nazwa zmiennej musi się <u>zaczynać od litery, znaku "$" lub "_"</u>, może zawierać tylko litery (<b>bez polskich znaków</b>), cyfry oraz "$" i "_".<br>
+        Poprawne nazwy: zmienna1, $wynik, _rozmiar, wynik1, Rekord, $_gracz<br>
+        Błędne nazwy: 1zmienna, wynik gry, wysokosc&amp;szerokosc, wynik.rekord, &amp;gracz, wysokość, imie+nazwisko</li>
+    <li><b><u>Wielkość liter ma znaczenie.</u></b> Rekord i rekord to dwie różne zmienne!</li>
+    <li>Należy <u>nie używać słów kluczowych</u> JavaScript jako nazw zmiennych.</li>
+  </ol>
+
+  <b>4) Omów typy zmiennych w JavaScript</b><br>
+  W JavaScript nie definiuje się typów zmiennych tak jak w C++ - <u>typ jest ustalany w trakcie przypisywania wartości</u>.
+  <ul>
+    <li><b>Number</b> - typ liczbowy (liczby <u>całkowite</u> i <u>zmiennoprzecinkowe</u>),</li>
+    <li><b>String</b> - typ tekstowy,</li>
+    <li><b>Boolean</b> - typ logiczny (true / false),</li>
+    <li><b>Null</b> - pusta zawartość,</li>
+    <li><b>Undefined</b> - typ niezidentyfikowany (zmienna bez przypisanej wartości),</li>
+    <li><b>Object</b> - obiekt.</li>
+  </ul>
+
+  <input type="button" value="zamknij okno" onclick="okno_zamknij_huba()"/>
+</body>
+</html>

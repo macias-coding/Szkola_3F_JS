@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+  <head>
+    <meta charset="utf-8">
+    <title>Maciej Huba klasa 3F - zadanie 4 (teoria JavaScript)</title>
+    <script type="text/javascript">
+      function okno_zamknij_huba()
+        {
+          window.close()
+        }
+    </script>
+  </head>
+<body>
+  <h2>Zadanie 4 - teoria JavaScript (Maciej Huba, klasa 3F)</h2>
+
+  <b>1) Kiedy powstał JavaScript (podaj datę).</b><br>
+  JavaScript powstał w 1995 roku - w grudniu 1995 został zaimplementowany w przeglądarce Netscape Navigator.<br><br>
+
+  <b>2) Dlaczego jest to język skryptowy?</b><br>
+  Bo jest językiem interpretowanym - nie trzeba go kompilować do kodu maszynowego, żeby zobaczyć efekty jego działania. Wystarczy przeglądarka internetowa, która ten język obsługuje.<br><br>
+
+  <b>3) Gdzie jest wykonywany JS (klient lub serwer)?</b><br>
+  Po stronie klienta - w przeglądarce internetowej użytkownika (dzięki Node.js można go też uruchamiać na serwerze).<br><br>
+
+  <b>4) Dlaczego JS to bezpieczne narzędzie?</b><br>
+  Ze względów bezpieczeństwa JavaScript ma znacznie ograniczone uprawnienia dostępu do zasobów komputera, na którym przeglądana jest strona.<br><br>
+
+  <b>5) Czy jest to język obiektowy, jeśli tak to dlaczego?</b><br>
+  Tak, bo wykorzystuje definicje obiektów, metod i zdarzeń, które opisują właściwości obiektów. Struktura obiektów jest określana przez DOM (Document Object Model). Można korzystać z gotowych obiektów i metod, tworzyć własne oraz modyfikować istniejące.<br><br>
+
+  <b>6) Wymień zalety JS:</b><br>
+  Zaleta1 - prostota: język jest relatywnie łatwy do opanowania.<br>
+  Zaleta2 - jest najbardziej rozpowszechnionym językiem skryptowym, w Internecie są miliony przykładów jego użycia.<br>
+  Zaleta3 - uniwersalność oraz odciążenie serwerów i ograniczenie ilości danych przesyłanych między serwerem a przeglądarką.<br><br>
+
+  <b>7) Framework to:</b><br>
+  Rodzaj programu (szkieletu) do tworzenia innych programów w JS, np. Angular (Google), React (Facebook), Vue.<br><br>
+
+  <b>8) Do aplikacji mobilnych można użyć Framework:</b><br>
+  React Native - pozwala budować aplikacje mobilne na różne systemy operacyjne (cross-platform apps).<br><br>
+
+  <b>9) Aplikacje responsywne to:</b><br>
+  Aplikacje, które dopasowują się do rozmiaru ekranu - JavaScript pobiera bieżący rozmiar ekranu, a przy pomocy CSS i HTML zmienia się rozmiar, ukrywa, zmniejsza, powiększa lub przenosi treści, aby wyglądały dobrze na dowolnym urządzeniu.<br><br>
+
+  <b>10) Przepisz linię kodu, pod nią wytłumaczenie jak działa ten fragment kodu</b><br>
+  <code>&lsaquo;input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen(' ')"&rsaquo;</code><br>
+  Tworzy przycisk (pole formularza typu button) o nazwie "przycisk" z napisem "Nowa Strona". Po kliknięciu przycisku (zdarzenie onclick) wywoływana jest funkcja JavaScript WinOpen(), która otwiera nowe okno.<br><br>
+
+  <b>11) Przepisz linię kodu, pod nią wytłumaczenie jak działa ten fragment kodu</b><br>
+  <code>window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");</code><br>
+  Metoda open obiektu window otwiera nowe okno przeglądarki i wczytuje do niego plik obraz.html. "okienko" to nazwa nowego okna, a trzeci parametr to lista opcji wyglądu okna:<br>
+  <table border="1" cellpadding="3">
+    <tr><td>toolbar=no</td><td>ukrywa pasek narzędzi (przyciski Wstecz, Dalej, Odśwież)</td></tr>
+    <tr><td>directories=no</td><td>ukrywa pasek katalogów / zakładek (przyciski katalogów)</td></tr>
+    <tr><td>menubar=no</td><td>ukrywa pasek menu (Plik, Edycja, Widok...)</td></tr>
+    <tr><td>height=280</td><td>wysokość okna - 280 pikseli</td></tr>
+    <tr><td>width=160</td><td>szerokość okna - 160 pikseli</td></tr>
+    <tr><td>top=200</td><td>odległość okna od górnej krawędzi ekranu - 200 pikseli</td></tr>
+    <tr><td>left=200</td><td>odległość okna od lewej krawędzi ekranu - 200 pikseli</td></tr>
+  </table><br>
+
+  <b>12) Opisz następującą instrukcję window.close()</b><br>
+  Metoda close() obiektu window zamyka bieżące okno przeglądarki (to, w którym wykonano skrypt). Najczęściej używa się jej w funkcji podpiętej pod przycisk "zamknij okno".<br><br>
+
+  <input type="button" value="zamknij okno" onclick="okno_zamknij_huba()"/>
+</body>
+</html>

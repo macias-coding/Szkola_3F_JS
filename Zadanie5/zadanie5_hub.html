@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+   <head>
+        <meta charset="utf-8">
+        <title>Maciej Huba klasa 3F - zadanie 5</title>
+      <script language="JavaScript">
+        // Układ 2: (6) mod 4 = 2 -> grafiki w czterech rogach ekranu, okno główne na środku
+        var szer_huba = 330;
+        var wys_huba = 300;
+
+        function WinOpen_huba_1()
+          {
+            window.open("grafika1_hub.html","okienko_grafika1","toolbar=no,directories=no,menubar=no,height=" + wys_huba + ",width=" + szer_huba + ",top=0,left=0");
+          }
+
+        function WinOpen_huba_2()
+          {
+            window.open("grafika2_hub.html","okienko_grafika2","toolbar=no,directories=no,menubar=no,height=" + wys_huba + ",width=" + szer_huba + ",top=" + (screen.availHeight - wys_huba - 60) + ",left=0");
+          }
+
+        function WinOpen_huba_3()
+          {
+            window.open("grafika3_hub.html","okienko_grafika3","toolbar=no,directories=no,menubar=no,height=" + wys_huba + ",width=" + szer_huba + ",top=0,left=" + (screen.availWidth - szer_huba - 20));
+          }
+
+        function WinOpen_huba_4()
+          {
+            window.open("grafika4_hub.html","okienko_grafika4","toolbar=no,directories=no,menubar=no,height=" + wys_huba + ",width=" + szer_huba + ",top=" + (screen.availHeight - wys_huba - 60) + ",left=" + (screen.availWidth - szer_huba - 20));
+          }
+
+        function okno_zamknij_huba()
+          {
+            window.close()
+          }
+      </script>
+    </head>
+<body>
+  <center>
+    <font face="Times New Roman" color="red" size="6"><b>wykonał: Maciej Huba mój numer w dzienniku 6, czyli mam układ [(6) mod 4=2] układ 2</b></font>
+    <br><br>
+    <form>
+       <input type="button" value="grafika1" onclick="WinOpen_huba_1()">
+       <input type="button" value="grafika2" onclick="WinOpen_huba_2()">
+       <input type="button" value="grafika3" onclick="WinOpen_huba_3()">
+       <input type="button" value="grafika4" onclick="WinOpen_huba_4()">
+       <br><br><br><br>
+       <input type="button" value="zamknij okno" onclick="okno_zamknij_huba()"/>
+    </form>
+  </center>
+</body>
+</html>
