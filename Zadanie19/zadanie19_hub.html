@@ -1,0 +1,36 @@
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Maciej Huba klasa 3F - zadanie 19 (kwadrat)</title>
+ </head>
+<body>
+ <script type="text/javascript">
+// Maciej Huba 3F 30.10.2026
+// Zadanie 19
+
+  function Pole_huba()
+   {
+ var a_hub= parseFloat(document.getElementById('dlugosc').value);
+ var b_hub= a_hub*a_hub;
+        document.getElementById("nazwa").innerHTML ="Pole kwadratu= "+b_hub.toFixed(2)+" cm^2";
+   }
+  function obwod_huba()
+   {
+ var a_hub= parseFloat(document.getElementById('dlugosc').value);
+ var b_hub= 4*a_hub;
+        document.getElementById("nazwa").innerHTML ="Obwód kwadratu= "+b_hub.toFixed(2)+" cm";
+   }
+  function okno_zamknij_huba()
+   {
+        window.close()
+   }
+ </script>
+  <h1>Wszystko o KWADRACIE</h1><br><br>
+  Podaj długość boku: <input type="text" id="dlugosc" value="podaj długość"> cm<br><br><br>
+  <input type="button" name="pole" value="Oblicz pole" Onclick="Pole_huba()"><br><br>
+  <input type="button" name="obwod" value="Oblicz obwod" Onclick="obwod_huba()"><br><br>
+  <div style="color:red;font-size:50px;" id="nazwa"></div>
+  <br>
+  <input type="button" value="zamknij okno" onclick="okno_zamknij_huba()"/>
+</body>
+</html>

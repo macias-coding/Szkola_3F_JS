@@ -1,0 +1,46 @@
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Maciej Huba klasa 3F - zadanie 18 (funkcje)</title>
+ </head>
+ <body>
+ <div style="color:navy;font-size:46px;">
+
+  <script language="JavaScript">
+// Maciej Huba 3F 30.10.2026
+// Zadanie 18
+
+   var a=parseFloat(prompt("a=",""));
+   var b=parseFloat(prompt("b=",""));
+
+   function suma_hub(a, b) {
+       return a + b;
+   }
+   function odejmowanie_hub(a, b) {
+       return a - b;
+   }
+   function mnozenie_hub(a, b) {
+       return a * b;
+   }
+   function od_kwadratu_hub(a, b) {
+       return a+"^2 = "+(a*a)+"<br>"+b+"^2 = "+(b*b);
+   }
+   function reszta_z_dzielenia_a_przez_b_hub(a, b) {
+       return a % b;
+   }
+
+   document.write("suma="+suma_hub(a,b)+"<br>");
+   document.write("różnica="+odejmowanie_hub(a,b)+"<br>");
+   document.write("iloczyn="+mnozenie_hub(a,b)+"<br>");
+   document.write(od_kwadratu_hub(a,b)+"<br>");
+   document.write("reszta z dzielenia a przez b="+reszta_z_dzielenia_a_przez_b_hub(a,b)+"<br>");
+
+     function okno_zamknij_huba()
+     {
+       window.close()
+     }
+  </script>
+ </div>
+ <input type="button" value="zamknij okno" onclick="okno_zamknij_huba()"/>
+ </body>
+</html>
